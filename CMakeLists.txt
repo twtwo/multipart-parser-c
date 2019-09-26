@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.11.0 FATAL_ERROR)
 
-project(multipart-parser-c)
+project(multipart-parser C)
 
 set(INSTALL_MULTIPART_PARSER_LIB_DIR "${CMAKE_INSTALL_PREFIX}/lib" CACHE PATH "Installation directory for libraries")
 set(INSTALL_MULTIPART_PARSER_INCLUDE_DIR "${CMAKE_INSTALL_PREFIX}/include" CACHE PATH "Installation directory for headers")
 
-set(MULTIPART_PARSER_LIBRARY multipart-parser-c)
+set(MULTIPART_PARSER_LIBRARY multipart-parser)
 
 set(MULTIPART_PARSER_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/multipart_parser.c
